@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <h1>form</h1>
+    <form action="">
+        <fieldset >
+            <legend>thông tin cá nhân:</legend>
+            Họ tên: <input type="text">
+            <br>Địa chỉ email: 
+            <input type="email"
+            placeholder="example@gmail.com">
+            <br> sdt <input type="tel">
+            <br>pass: <input type="password">
+        </fieldset>
+        
+        <br> ngành: 
+        <select name="" id="">
+            <optgroup label="trường công nghệ">
+                <option value="">cntt</option>
+                <option value="">khmt</option>
+            </optgroup>
+            
+        </select>
+        <br> sinh viên năm: 
+        <input type="number" 
+        min="1" max="4" value="1">
+        <br> ngày sinh: <input type="date">
+        <br>giới tính: 
+        <br><input type="radio"name="gt"id="nam">
+        <label for="nam">nam</label>
+        <br><input type="radio"name="gt"id="nu">
+        <label for="nu">nữ</label>
+        <br>các ngôn ngữ lập trình đã biết
+        <input type="checkbox"name="nn"id="c++">
+        <label for="c++">c++</label>
+        <input type="checkbox"name="nn"id="java">
+        <label for="java">java</label>
+        <input type="checkbox"name="nn"id="python">
+        <label for="python">python</label>
+        <br>lương: <input type="range"
+        min="10000000" max="30000000">
+        <br> chứng chỉ:
+        <input type="file" multiple>
+        <br><input type="reset">
+        <br><input type="submit">
+    </form>
+</body>
+</html>

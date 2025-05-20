@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+}
+header {
+  display: flex;
+  background-color: red;
+  text-align: left;
+  padding: 10px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  margin-left: 5px;
+}
+.logo img {
+  display: flex;
+  width: 70px;
+  margin-right: 5px;
+}
+.cart {
+  display: flex;
+  align-items: center;
+  margin-left: 1300px;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.menu {
+  display: flex;
+  background-color: pink;
+  text-align: center;
+  width: 100%;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+
+.menu ul li {
+  display: none;
+  min-width: 350px;
+  position: absolute;
+}
+.menu> ul li a{
+  display: block;
+  padding: 0 25px;
+  line-height: 50px;
+  color: #f1f2f3;
+  text-decoration: none;
+}
+.menu ul li a:hover {
+  background-color: white;
+  color: red;
+}
+.menu ul li > .sub-menu7 {
+  display: none;
+  position: absolute;
+}
+#menu li {
+  position: relative;
+}
+.sub-menu7 {
+  display: none;
+  position: absolute;
+}
+#menu ul li:hover .sub-menu7 {
+  display: block;
+}
+.search {
+  display: flex;
+  align-items: center;
+}
+.search-input,
+.search select {
+  margin-top: 4px;
+  padding: 5px;
+  float: right;
+}
+main {
+  display: flex;
+  padding: 20px;
+}
+.sidebar {
+  border: 1px solid gray;
+  width: 250px;
+  padding: 5px;
+  height: 130px;
+}
+.Categories {
+  background-color: yellow;
+  font-weight: bold;
+  text-align: left;
+  height: 20px;
+  padding-top: 4px;
+}
+.sidebar ul {
+  display: grid;
+  list-style: none;
+}
+.sidebar ul li {
+  margin-top: 8px 0;
+}
+.product-section {
+  border: 1px solid #333;
+  flex: 1;
+  padding-bottom: 10px;
+}
+.product-section h2 {
+  font-size: 24px;
+  color: gray;
+  margin-left: 10px;
+  font-weight: bold;
+}
+.product-grid1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 220px));
+  gap: 20px;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 240px));
+}
+.product-card {
+  padding: 10px;
+  text-align: left;
+}
+.product-card img {
+  width: 100%;
+}
+.product-name {
+  font-size: 15px;
+  color: gray;
+}
+.product-des {
+  font-size: 13px;
+}
+.price {
+  font-size: 13px;
+}

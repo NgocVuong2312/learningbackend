@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>SEARCH</h1>
+    <form action="/searchData" method="post">
+        <input type="text" name="input" placeholder="input">
+        <button type="submit"> Search</button>
+
+    </form>
+    <p>
+        {% if search_txt %}
+        you search for: {{ search_txt }}
+    </p>
+    {% for row in table %}
+    <li>
+        {{row[0]}}
+        -{{row[1]}}
+        -{{row[2]}}
+    </li>
+    {% endfor %}
+</body>
+</html>
